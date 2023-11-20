@@ -15,6 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.set("views", "views");
 
+
+const session = require('express-session')
+
 const sess = {
     secret: 'ausazko hitz multzoa',
     cookie: {}
